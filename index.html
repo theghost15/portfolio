@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الأعمال | الصفحة الشخصية</title>
+    <!-- استخدام Tailwind CSS للتصميم السريع والأنيق -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- الهيدر أو القمة -->
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">معرض أعمالي التقنية</h1>
+            <nav class="flex gap-4 text-sm text-slate-400">
+                <a href="#projects" class="hover:text-cyan-400 transition">المشاريع</a>
+                <a href="#contact" class="hover:text-cyan-400 transition">تواصل معي</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero) -->
+    <section class="py-20 px-4 text-center max-w-4xl mx-auto">
+        <span class="bg-cyan-950 text-cyan-400 border border-cyan-800 text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider inline-block mb-4">مطور برمجيات وأنظمة</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">أبني حلولاً برمجية متكاملة، <br/><span class="text-cyan-400">من الأنظمة المكتبية إلى المنصات السحابية.</span></h2>
+        <p class="text-slate-400 text-lg mb-8 max-w-2xl mx-auto">هنا أستعرض أبرز مشاريعي التقنية التي تم تطويرها وإطلاقها، مع التفاصيل التشريحية وروابط المعاينة.</p>
+        <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-8 py-3 rounded-xl transition shadow-lg shadow-cyan-500/20">استعرض المشاريع</a>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="py-16 px-4 max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-10 border-r-4 border-cyan-400 pr-3">المشاريع البارزة</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- المشروع الأول: نماء OS -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold text-slate-100">نماء OS (Namaa OS)</h4>
+                        <span class="bg-slate-800 text-slate-300 text-xs px-2 py-1 rounded">إصدار 2.22.1</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                        نظام سعودي متكامل لإدارة الأعمال يجمع المحاسبة ونقاط البيع والمخزون. يعمل بدون إنترنت مع تحديثات سحابية ومتوافق مع متطلبات الزكاة والضريبة.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-slate-800 text-cyan-400 text-xs px-2.5 py-1 rounded-md">React / TS</span>
+                        <span class="bg-slate-800 text-cyan-400 text-xs px-2.5 py-1 rounded-md">Node.js</span>
+                        <span class="bg-slate-800 text-cyan-400 text-xs px-2.5 py-1 rounded-md">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="border-t border-slate-800 pt-4 flex justify-between items-center text-sm">
+                    <span class="text-slate-500">تطبيق مكتبي / سحابي</span>
+                    <span class="text-cyan-400 font-medium">عرض تفصيلي قريباً</span>
+                </div>
+            </div>
+
+            <!-- المشروع الثاني: بازارم -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold text-slate-100">سوق بازارم (Bazaarem)</h4>
+                        <span class="bg-emerald-950 text-emerald-400 text-xs px-2 py-1 rounded">نشط</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                        سوق إلكتروني متعدد البائعين مصمم لأفغانستان (كابل)، يدعم 4 لغات، نظام الدفع عند الاستلام، ولاء العملاء، ولوحات تحكم كاملة للبائعين والإدارة.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-slate-800 text-cyan-400 text-xs px-2.5 py-1 rounded-md">E-Commerce</span>
+                        <span class="bg-slate-800 text-cyan-400 text-xs px-2.5 py-1 rounded-md">Multi-language</span>
+                    </div>
+                </div>
+                <div class="border-t border-slate-800 pt-4 flex justify-between items-center text-sm">
+                    <a href="https://www.bazaarem.com" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">زيارة الموقع الحي &larr;</a>
+                </div>
+            </div>
+
+            <!-- المشروع الثالث: Ijar Stuff -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold text-slate-100">منصة Ijar Stuff</h4>
+                        <span class="bg-blue-950 text-blue-400 text-xs px-2 py-1 rounded">مؤجر ومستأجر</span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+                        منصة إلكترونية متخصصة في تأجير العقارات، السيارات، والمعدات بين الأفراد بطريقة آمنة، منظمة، ومع اتفاق مباشر بين الأطراف دون بوابات دفع معقدة.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-slate-800 text-cyan-400 text-xs px-2.5 py-1 rounded-md">Sharing Economy</span>
+                        <span class="bg-slate-800 text-cyan-400 text-xs px-2.5 py-1 rounded-md">Platform</span>
+                    </div>
+                </div>
+                <div class="border-t border-slate-800 pt-4 flex justify-between items-center text-sm">
+                    <a href="https://ijarstuff.shipstatic.com" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">زيارة المنصة &larr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact" class="border-t border-slate-800 bg-slate-900/50 py-8 text-center text-sm text-slate-500">
+        <p>جميع الحقوق محفوظة © 2026 - تم التطوير بعناية لعرض الأعمال التقنية.</p>
+    </footer>
+
+</body>
+</html>
